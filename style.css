@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position:absolute;
+    top: 30px;
+}
+
+.gameOver, .congratulation {  
+    color: red;
+    position: absolute;
+    bottom: 40%;
+    left:45%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+    z-index: 6;
+}
+
+button {
+    border: none;
+    background-color: white;
+    color: rgb(100, 100, 100);
+    padding: 20px;
+    margin: 20px;
+}
+
+button:hover {
+    cursor:pointer;
+    color: rgb(34, 34, 34);
+}
+
+.imgDiv{
+    background-size: cover;
+    position: absolute;
+    margin-left: 30px;
+}
+
+.rockDiv, .rockDivTwo, .rockDivThree {
+    width: 100%;
+    bottom: 35px;
+    z-index: 1;
+}
+
+
+.rockDiv {
+    left: 8%;
+}
+
+.rockDivTwo {
+    left: 32%;
+}
+
+.rockDivThree {
+    left: 72%;
+}
+
+.boxDiv,.boxDivTwo {
+    width: 100%;
+    bottom: 40%;
+    z-index: 3;
+}
+
+.boxDiv {
+    left: 20%;
+}
+
+.boxDivTwo {
+    left: 60%;
+}
+
+
+
+.dogCharacterDiv {
+    position: absolute;
+    bottom: 48px;
+    z-index: 2;
+    transition: bottom .5s;
+}
+
+
+.boneDiv,.boneDivTwo  {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 2%;
+    animation: goUp .5s 2;
+}
+
+
+
+@keyframes goUp {
+    0% {bottom: 100%;}
+    50% {bottom: 120%;}
+    100% {bottom: 100%;}
+}
+
+.flagDiv {
+    position: absolute;
+    bottom: 50px;
+    right:50px;
+}
+
+.box, .boxTwo {
+    max-width: 100px;
+    min-width: 50px;
+}
+
+.bone, .boneTwo {
+
+    max-width: 80px;
+    min-width: 30px;
+}
+
+.dogCharacter {
+    max-width: 80px;
+    min-width: 50px;
+}
+
+.rock {
+    max-width: 40px;
+    min-width: 10px;
+}
+
+.flag {
+    max-width: 60px;
+    min-width: 20px;
+
+}
+
+.ground {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    border-bottom: 5px solid burlywood;
+}
